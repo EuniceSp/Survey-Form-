@@ -29,6 +29,65 @@
                     <label for="age" id="number-label"> Age </label>
                     <input type="number" name="age" id="number" min="10" max="80" placeholder="your age">
                 </div>
+                <div class="form-control">
+                    <select name="country" id="dropdown">
+                        <option value="Mexico">Mexico</option>
+                        <option value="USA">USA</option>
+                        <option value="Canada">Canada</option>
+                    </select>
+                </div>
+                <div class="form-control">
+                    <legend> Choose a color </legend>
+                    <label>
+                        <input type="radio" name="color" value="blue"> Blue
+                    </label>
+                    <label>
+                        <input type="radio" name="color" value="green"> Green
+                    </label>
+                    <label>
+                        <input type="radio" name="color" value="pink"> Pink
+                    </label>
+                    <label>
+                        <input type="radio" name="color" value="yellow"> Yellow
+                    </label>
+                    <label>
+                        <input type="radio" name="color" value="white"> White
+                    </label>
+                    <label>
+                        <input type="radio" name="color" value="black"> Black
+                    </label>
+                    <label>
+                        <input type="radio" name="color" value="purple"> Purple
+                    </label>
+                </div>
+                <div class="form-control">
+                    <legend> Choose all your hobbies </legend>
+                    <label>
+                        <input type="checkbox" name="hobbies" value="read" > Read
+                    </label>
+                    <label>
+                        <input type="checkbox" name="hobbies" value="music" > Music
+                    </label>
+                    <label>
+                        <input type="checkbox" name="hobbies" value="crafts" > Crafts
+                    </label>
+                    <label>
+                        <input type="checkbox" name="hobbies" value="exercise" > Exercise
+                    </label>
+                    <label>
+                        <input type="checkbox" name="hobbies" value="bake" > Bake
+                    </label>
+                    <label>
+                        <input type="checkbox" name="hobbies" value="others" > Others
+                    </label>
+                </div>
+                <div class="form-control">
+                    <legend>Comments</legend>
+                    <textarea name="comments" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="form-control">
+                    <button type="submit" id="submit">Send</button>
+                </div>
             </form>
         </div>
     </main>
