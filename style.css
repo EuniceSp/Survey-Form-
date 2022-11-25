@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(https://www.pixel4k.com/wp-content/uploads/2019/03/dark-blur-abstract-4k_1551646029.jpg);
+    font-family: 'Raleway', sans-serif;
+    color: whitesmoke;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 250px 600px;
+    grid-template-areas: 
+    "header"
+    "main";
+    place-items: center;
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+
