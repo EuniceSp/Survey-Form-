@@ -25,18 +25,19 @@
                     <label for="email" id="email-label">Email</label>
                     <input type="email" name="email" id="email" required placeholder="your email here" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
                 </div>
-                <div class="form-control">
+                <div class="form-input">
                     <label for="age" id="number-label"> Age </label>
                     <input type="number" name="age" id="number" min="10" max="80" placeholder="your age">
                 </div>
-                <div class="form-control">
+                <div class="form-select">
+                    <legend>Country of residence</legend>
                     <select name="country" id="dropdown">
                         <option value="Mexico">Mexico</option>
                         <option value="USA">USA</option>
                         <option value="Canada">Canada</option>
                     </select>
                 </div>
-                <div class="form-control">
+                <div class="form-options">
                     <legend> Choose a color </legend>
                     <label>
                         <input type="radio" name="color" value="blue"> Blue
@@ -60,7 +61,7 @@
                         <input type="radio" name="color" value="purple"> Purple
                     </label>
                 </div>
-                <div class="form-control">
+                <div class="form-options">
                     <legend> Choose all your hobbies </legend>
                     <label>
                         <input type="checkbox" name="hobbies" value="read" > Read
@@ -81,11 +82,11 @@
                         <input type="checkbox" name="hobbies" value="others" > Others
                     </label>
                 </div>
-                <div class="form-control">
+                <div class="form-text">
                     <legend>Comments</legend>
                     <textarea name="comments" id="" cols="30" rows="10"></textarea>
                 </div>
-                <div class="form-control">
+                <div class="form-button">
                     <button type="submit" id="submit">Send</button>
                 </div>
             </form>
