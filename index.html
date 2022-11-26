@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
     <header>
         <h1 id="title"> Survey Form </h1>
         <p id="description"> Please enter your details to get personalized updates </p>
@@ -23,7 +25,8 @@
                 </div>
                 <div class="form-input">
                     <label for="email" id="email-label">Email</label>
-                    <input class="inp" type="email" name="email" id="email" required placeholder="your email here" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
+                    <input class="inp" type="email" name="email" id="email" required placeholder="your email here"
+                        pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
                 </div>
                 <div class="form-input">
                     <label for="age" id="number-label"> Age </label>
@@ -39,53 +42,64 @@
                     </select>
                 </div>
                 <div class="form-options">
-                    <legend> Choose a color </legend>
-                    <label>
-                        <input type="radio" name="color" value="blue"> Blue
-                    </label>
-                    <label>
-                        <input type="radio" name="color" value="green"> Green
-                    </label>
-                    <label>
-                        <input type="radio" name="color" value="pink"> Pink
-                    </label>
-                    <label>
-                        <input type="radio" name="color" value="yellow"> Yellow
-                    </label>
-                    <label>
-                        <input type="radio" name="color" value="white"> White
-                    </label>
-                    <label>
-                        <input type="radio" name="color" value="black"> Black
-                    </label>
-                    <label>
-                        <input type="radio" name="color" value="purple"> Purple
-                    </label>
+                    <div class="title-opt">
+                        <legend> Choose a color </legend>
+                    </div>
+                    <div class="content-opt">
+                        <label>
+                            <input class="rad" type="radio" name="color" value="blue"> Blue
+                        </label>
+                        <label>
+                            <input class="rad" type="radio" name="color" value="green"> Green
+                        </label>
+                        <label>
+                            <input class="rad" type="radio" name="color" value="pink"> Pink
+                        </label>
+                        <label>
+                            <input class="rad" type="radio" name="color" value="yellow"> Yellow
+                        </label>
+                        <label>
+                            <input class="rad" type="radio" name="color" value="white"> White
+                        </label>
+                        <label>
+                            <input class="rad" type="radio" name="color" value="black"> Black
+                        </label>
+                        <label>
+                            <input class="rad" type="radio" name="color" value="purple"> Purple
+                        </label>
+                    </div>
+
                 </div>
                 <div class="form-options">
-                    <legend> Choose all your hobbies </legend>
-                    <label>
-                        <input type="checkbox" name="hobbies" value="read" > Read
-                    </label>
-                    <label>
-                        <input type="checkbox" name="hobbies" value="music" > Music
-                    </label>
-                    <label>
-                        <input type="checkbox" name="hobbies" value="crafts" > Crafts
-                    </label>
-                    <label>
-                        <input type="checkbox" name="hobbies" value="exercise" > Exercise
-                    </label>
-                    <label>
-                        <input type="checkbox" name="hobbies" value="bake" > Bake
-                    </label>
-                    <label>
-                        <input type="checkbox" name="hobbies" value="others" > Others
-                    </label>
+                    <div class="title-opt">
+                        <legend> Choose all your hobbies </legend>
+                    </div>
+                    <div class="content-opt">
+                        <label>
+                            <input class="check" type="checkbox" name="hobbies" value="read"> Read
+                        </label>
+                        <label>
+                            <input class="check" type="checkbox" name="hobbies" value="music"> Music
+                        </label>
+                        <label>
+                            <input class="check" type="checkbox" name="hobbies" value="crafts"> Crafts
+                        </label>
+                        <label>
+                            <input class="check" type="checkbox" name="hobbies" value="exercise"> Exercise
+                        </label>
+                        <label>
+                            <input class="check" type="checkbox" name="hobbies" value="bake"> Bake
+                        </label>
+                        <label>
+                            <input class="check" type="checkbox" name="hobbies" value="others"> Others
+                        </label>
+                    </div>
+
+
                 </div>
                 <div class="form-text">
-                    <legend>Comments</legend>
-                    <textarea name="comments" id="" cols="30" rows="10"></textarea>
+                    <legend class="comm">Comments</legend>
+                    <textarea class="text-comm" placeholder="any comment do you have" name="comments" id="" cols="30" rows="10"></textarea>
                 </div>
                 <div class="form-button">
                     <button type="submit" id="submit">Send</button>
@@ -93,6 +107,7 @@
             </form>
         </div>
     </main>
-    
+
 </body>
+
 </html>

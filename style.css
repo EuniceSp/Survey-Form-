@@ -11,7 +11,7 @@ body{
     color: whitesmoke;
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 180px 900px;
+    grid-template-rows: 180px 1100px;
     grid-template-areas: 
     "header"
     "main";
@@ -43,6 +43,7 @@ p{
     backdrop-filter: blur(5px);
     width: 700px;
     padding: 10px;
+    border-radius: 3rem;
 }
 
 .form-input{
@@ -55,7 +56,7 @@ p{
     align-items: center;
 }
 
-#name-label, #email-label, #number-label, .label-select{
+#name-label, #email-label, #number-label, .label-select, .comm{
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 8px;
@@ -75,7 +76,7 @@ p{
     color: #B0BEC5;
 }
 
-.inp:focus, select:focus {
+.inp:focus, select:focus, .rad:focus, .check:focus, .text-comm:focus {
     outline: none;
     box-shadow: 0.2rem 0.8rem 1.6rem #130927;
   }
@@ -90,6 +91,74 @@ p{
     align-items: center;
 }
 
-select::placeholder{
-    color: #B0BEC5;
+.form-options{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.title-opt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.content-opt{
+    display: flex;
+    padding-left: 100px;
+    flex-direction: column;
+}
+
+.rad .check{
+    margin-bottom: 5px;
+    transition: box-shadow 300ms;
+}
+
+.form-text{
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-comm{
+    width: 500px;
+    height: 70px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 0.4rem;
+    transition: box-shadow 300ms;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+.form-button{
+    height: 100px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#submit{
+    width: 500px;
+    height: 50px;
+    border: none;
+    border-radius: 0.4rem;
+    box-shadow: 0.2rem 0.8rem 1.6rem #130927;
+    text-align: center;
+    font-family:'Raleway', sans-serif ;
+    font-size: 20px;
+    color: white;
+    background-color: #15131a;
+    padding: 10px;
 }
